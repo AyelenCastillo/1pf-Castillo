@@ -1,0 +1,28 @@
+.container{
+    background-color: beige;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.034);
+    margin-bottom: 20px;
+}
+.form{
+    display: flex;
+}
+.name,.lastname,.password,.role{
+    width: 100%;
+    padding: 8px;
+}
+.email{
+    width: 70%;
+    padding: 8px;
+}
+ form{
+    padding: 1rem;
+ }
+ .button{
+    width: 50%;
+    height: 50px;
+    margin-top: 15px;
+    background-color: white;
+    border-radius: 10px;
+ }

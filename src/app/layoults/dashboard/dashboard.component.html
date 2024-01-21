@@ -1,0 +1,39 @@
+<mat-drawer-container class="dashboard-container" autosize>
+ <!--Sidenav-->
+     <mat-drawer #drawer class="drawer" mode="side">
+     <img class="pinceles" src="../../../assets/img/pinceles.png" alt="pinceles">
+     <hr>
+    <button (click)="showFiller = !showFiller"  mat-button>Cursos</button>
+    @if (showFiller) {
+      <p>cursos</p>
+    }
+  </mat-drawer>
+ <!--Sidenav-->
+ <!--Contenido-->
+  <div class="example-sidenav-content">
+<!--Toolbar--> 
+    <mat-toolbar class="toolbar">
+        <button  (click)="drawer.toggle()" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" >
+          <mat-icon>menu</mat-icon>
+        </button>
+        <img class="icon-art" src="../../../assets/img/art_97515.ico" alt="icono arte">
+        <span class="artcom"><b>Artcom</b></span>
+        <span class="example-spacer"></span>
+        <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+          <mat-icon>home</mat-icon>
+        </button>
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+          <mat-icon>share</mat-icon>
+        </button>
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+            <mat-icon>person</mat-icon>
+          </button>
+      </mat-toolbar>
+<!--Toolbar-->
+<div class="app-users">
+  <app-pipes></app-pipes>
+  <app-users></app-users>
+</div>
+  </div>
+ <!--Contenido-->
+</mat-drawer-container>
