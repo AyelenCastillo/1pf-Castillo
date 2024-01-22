@@ -8,12 +8,17 @@ import {MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SharedModule } from '../../../../shared/shared.module';
+import { MatIconModule } from '@angular/material/icon';
+import { UsereditformComponent } from './components/usereditfrom/usereditform.component';
+import { MatDialogModule } from '@angular/material/dialog';
+
 
 
 @NgModule({
   declarations: [
     UsersComponent,
-    UserformComponent
+    UserformComponent,
+    UsereditformComponent
   ],
   imports: [
     CommonModule,
@@ -22,7 +27,9 @@ import { SharedModule } from '../../../../shared/shared.module';
     MatInputModule,
     MatSelectModule,
     ReactiveFormsModule,
-    SharedModule
+    SharedModule,
+    MatIconModule,
+    MatDialogModule
   ],
   exports: [
     UsersComponent

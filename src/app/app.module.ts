@@ -7,11 +7,12 @@ import { DashboardModule } from './layoults/dashboard/dashboard.module';
 import es from "@angular/common/locales/es";
 import { registerLocaleData } from '@angular/common';
 
+
 registerLocaleData(es);
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
